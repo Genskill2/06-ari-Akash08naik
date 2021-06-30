@@ -1,4 +1,14 @@
-string ari(string)
+
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <cs50.h>
+
+string ari(string);
+
+string grade (int);
+
+string ari(string a)
 {
  
   int w=0,s=0,c=0;
@@ -21,6 +31,7 @@ string ari(string)
    
  }
  
+  //printf("%d %d %d",c,w,s);
    
   float sum = (4.71*(float)(c)/w)+(0.5*((float)(w)/s))-21.43;
   string grade(int sum)
@@ -53,4 +64,4 @@ case     5 : return " Fifth Grade";
   a= grade((int)(sum)+1);
   
   return a;
-  }
+}
