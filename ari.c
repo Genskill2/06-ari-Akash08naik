@@ -1,4 +1,4 @@
-string ari(string a)
+string ari(string)
 {
  
   int w=0,s=0,c=0;
